@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/auth.css">
+    <script src="./js/auth.js" defer></script>
+    <title>Авторизация</title>
+</head>
+<body>
+    <section class="auth">
+        <div class="container">
+            <div class="auth__wrap">
+                <h1 class="auth__title">Вход в приложение</h1>
+
+                <div class="auth__block">
+                    <div class="auth__toggle">
+                        <button class="auth__btn auth__btn--active" data-tab="login">Login</button>
+                        <button class="auth__btn" data-tab="register">Registration</button>
+                    </div>
+                </div>
+
+                <div class="auth__forms">
+
+                    <form class="auth__form auth__form--register">
+                        <div class="auth__inputs">
+                            <input type="text" id="name" class="auth__input auth__input--name" required>
+                            <label class="auth__label" for="name">Ваше имя</label>
+                        </div>
+    
+                        <div class="auth__inputs">
+                            <input type="text" id="tel" class="auth__input auth__input--tel" required>
+                            <label class="auth__label" for="tel">Телефон</label>
+                        </div>
+                        
+                        <div class="auth__inputs">
+                            <input type="text" id="email" class="auth__input auth__input--email" required>
+                            <label class="auth__label" for="email">Email</label>
+                        </div>
+    
+                        <div class="auth__inputs">
+                            <input type="text" id="pass" class="auth__input auth__input--pass" required>
+                            <label class="auth__label" for="pass">Пароль</label>
+                        </div>
+    
+                        <div class="auth__inputs">
+                            <input type="text" id="repass" class="auth__input auth__input--repass" required>
+                            <label class="auth__label" for="repass">Повторите пароль</label>
+                        </div>
+
+                        <button class="auth__submit auth__submit--register">Зарегистрироваться</button>
+                    </form>
+
+                    <form class="auth__form auth__form--login auth__form--active">
+                        <div class="auth__inputs">
+                            <input type="text" id="name" class="auth__input login__input--email" required>
+                            <label class="auth__label" for="name">Ваш email</label>
+                        </div>
+    
+                        <div class="auth__inputs">
+                            <input type="password" id="pass" class="auth__input login__input--pass" required>
+                            <label class="auth__label" for="pass">Пароль</label>
+                        </div>
+
+                        <button class="auth__submit auth__submit--login">Войти</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="custom-modal">
+            <div class="modal-content">
+                <p class="modal-text"></p>
+                <div class="modal__btns">
+                    <button class="modal-btn modal-true">ОК</button>
+                    <!-- <button class="modal-btn modal-false">Отмена</button> -->
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <!-- <link rel="preload" href="./sidebar.html" as="fetch" type="text/html"> -->
+        <script src="./js/index.js" defer></script>
+        <title>England</title>
+    </head>
+    <body>
+        <main class="main">
+            <section class="main__section">
+                <div class="main__wrapper">
+                    <aside class="main__sidebar">
+                        <img src="./img/man.png" alt="" class="main__man">
+                        <div class="header__logo">
+                            <h2>English Electron</h2>
+                            <p>⚡</p>
+                        </div>
+                        <ul class="sidebar__menu">
+                            <li class="sidebar__item">
+                                <a
+                                    class="sidebar__link link_page sidebar-active"
+                                    href="#"
+                                    data-page="main"
+                                    >Главная</a
+                                >
+                            </li>
+                            <li class="sidebar__item">
+                                <a
+                                    class="sidebar__link link_page"
+                                    href="#"
+                                    data-page="profile"
+                                    >Профиль</a
+                                >
+                            </li>
+                            <li class="sidebar__item">
+                                <a
+                                    class="sidebar__link link_page"
+                                    href="#"
+                                    data-page="traning"
+                                    >Тренировка</a
+                                >
+                            </li>
+                            <li class="sidebar__item">
+                                <a
+                                    class="sidebar__link link_page"
+                                    href="#"
+                                    data-page="words"
+                                    >Мои слова</a
+                                >
+                            </li>
+                            <li class="sidebar__item">
+                                <a
+                                    class="sidebar__link link_page"
+                                    href="#"
+                                    data-page="text"
+                                    >Текста</a
+                                >
+                            </li>
+                            <li class="sidebar__item sidebar__itemMore">
+                                <a class="sidebar__link" href="#">Еще</a>
+                                <ul class="sidebar__submenu">
+                                    <li>
+                                        <a
+                                            href="#"
+                                            class="sidebar__submenuLink link_page"
+                                            data-page="settings"
+                                            >Настройки</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="#"
+                                            class="sidebar__submenuLink link_page"
+                                            data-page="support"
+                                            >Поддержка</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="#"
+                                            class="sidebar__submenuLink exit_link"
+                                            >Выйти</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </aside>
+                    <div class="main__content">
+                    </div>
+                </div>
+            </section>
+
+            <div class="custom-modal">
+                <div class="modal-content">
+                    <p class="modal-text">Вы уверены, что хотите выйти?</p>
+                    <div class="modal__btns">
+                        <button class="modal-btn modal-true">ОК</button>
+                        <button class="modal-btn modal-false">Отмена</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

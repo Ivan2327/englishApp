@@ -1,0 +1,34 @@
+{
+  "name": "english_platform",
+  "version": "1.0.0",
+  "main": "src/settings.js",
+  "scripts": {
+    "start": "electron . --no-sandbox",
+    "build": "electron-builder --win"
+  },
+  "author": "Ivan",
+  "license": "ISC",
+  "description": "English learning app",
+  "devDependencies": {
+    "electron": "^35.0.2",
+    "electron-builder": "^25.1.8",
+    "electron-debug": "^4.1.0"
+  },
+  "build": {
+    "appId": "com.englishplatform",
+    "productName": "English Platform",
+    "win": {
+      "target": "nsis",
+      "icon": "path_to_icon/icon.ico",
+      "asar": true,
+      "asarUnpack": "**/*.node"
+    },
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "**/*",
+      "src/**/*"
+    ]
+  }
+}
